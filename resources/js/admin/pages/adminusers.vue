@@ -10,9 +10,8 @@
 						<table class="_table">
 							<tr>
 								<th>Id</th>
-								<th>Name</th>
-								<th>Email</th>
-								<th>User Type</th>
+								<th>Username</th>
+								<th>Level</th>
 								<th>Created At</th>
 								<th>Action</th>
 							</tr>

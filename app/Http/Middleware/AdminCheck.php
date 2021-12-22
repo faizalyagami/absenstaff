@@ -24,12 +24,6 @@ class AdminCheck
         }
 
         $user = Auth::user();
-        if($user->role->is_admin  == 0) {
-            Auth::logout();
-            return response()->json([
-                'message' => 'Incorrect Login detail (user)'
-            ], 403);
-        } 
 
         return $next($request);
     }

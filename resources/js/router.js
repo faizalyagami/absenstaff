@@ -6,12 +6,14 @@ import hooks from './components/pages/basic/hooks'
 import methods from './components/pages/basic/methods'
 
 import home from './components/pages/home'
-import tags from './admin/pages/tags'
-import categories from './admin/pages/categories'
 import usecom from './vuex/usecom'
-import adminusers from './admin/pages/adminusers'
 import login from './admin/pages/login'
 import role from './admin/pages/role'
+
+import positions from './admin/pages/positions'
+import departements from './admin/pages/departements'
+import users from './admin/pages/users'
+import employees from './admin/pages/employees'
 
 Vue.use(Router)
 
@@ -28,16 +30,20 @@ const routes = [
         component: home
     }, 
     {
-        path: '/tags',
-        component: tags
+        path: '/positions',
+        component: positions
     }, 
     {
-        path: '/categories',
-        component: categories
+        path: '/departements',
+        component: departements
     }, 
     {
-        path: '/adminusers',
-        component: adminusers
+        path: '/users',
+        component: users
+    }, 
+    {
+        path: '/employees',
+        component: employees
     }, 
     {
         path: '/login',

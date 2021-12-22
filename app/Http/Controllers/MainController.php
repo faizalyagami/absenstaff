@@ -23,9 +23,6 @@ class MainController extends Controller
         // you are already loggedin... so check for it you are an admin user...
         if(Auth::check()) {
             $user = Auth::user();
-            if($user->role->is_admin  == 0) {
-                return redirect('/login');
-            }
 
             if($request->path() == 'login') {
                 return redirect('/');
@@ -305,7 +302,7 @@ class MainController extends Controller
             $message->role_id = $request->role_id;
             $message->save();
 
-            $users = User::with(['role'])->orderBy('id', 'desc')->where('id', $message->id)->first();
+            $users = User::orderBy('id', 'desc')->where('id', $message->id)->first();
 
             $result = $users;
             $errorcode = 201;
@@ -319,7 +316,7 @@ class MainController extends Controller
     }
 
     public function getUsers() {
-        $users = User::with(['role'])->orderBy('id', 'desc')->get();
+        $users = User::orderBy('id', 'desc')->get();
 
         return $users;
     }
@@ -347,7 +344,7 @@ class MainController extends Controller
             $message->role_id = $request->role_id;
             $message->save();
 
-            $users = User::with(['role'])->orderBy('id', 'desc')->where('id', $request->id)->first();
+            $users = User::orderBy('id', 'desc')->where('id', $request->id)->first();
 
             $result = $users;
             $errorcode = 201;
@@ -390,19 +387,12 @@ class MainController extends Controller
 
     public function adminLogin(Request $request) {
         $this->validate($request, [
-            'email' => 'bail|required|email',
+            'username' => 'bail|required',
             'password' => 'bail|required|min:6',
         ]);
 
-        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        if(Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
             $user = Auth::user();
-
-            if($user->role->is_admin  == 0) {
-                Auth::logout();
-                return response()->json([
-                    'message' => 'Incorrect Login detail (user)'
-                ], 401);
-            } 
 
             return response()->json([
                 'message' => 'You are logged in', 

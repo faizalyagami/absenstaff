@@ -27,15 +27,31 @@ Route::group(['middleware' => 'adminCheck', 'prefix' => 'app'], function () {
     Route::post('/delete_category', 'App\Http\Controllers\MainController@deleteCategory');
     Route::get('/get_categories', 'App\Http\Controllers\MainController@getCategories');
     
-    Route::post('/create_user', 'App\Http\Controllers\MainController@createUser');
-    Route::post('/edit_user', 'App\Http\Controllers\MainController@editUser');
-    Route::post('/delete_user', 'App\Http\Controllers\MainController@deleteUser');
-    Route::get('/get_users', 'App\Http\Controllers\MainController@getUsers');
+    Route::post('/create_user', 'App\Http\Controllers\UserController@create');
+    Route::post('/edit_user', 'App\Http\Controllers\UserController@edit');
+    Route::post('/delete_user', 'App\Http\Controllers\UserController@delete');
+    Route::get('/get_users', 'App\Http\Controllers\UserController@gets');
 
     Route::post('/create_role', 'App\Http\Controllers\MainController@createRole');
     Route::post('/edit_role', 'App\Http\Controllers\MainController@editRole');
     Route::post('/delete_role', 'App\Http\Controllers\MainController@deleteRole');
     Route::get('/get_roles', 'App\Http\Controllers\MainController@getRoles');
+
+
+    Route::post('/create_position', 'App\Http\Controllers\PositionController@create');
+    Route::post('/edit_position', 'App\Http\Controllers\PositionController@edit');
+    Route::post('/delete_position', 'App\Http\Controllers\PositionController@delete');
+    Route::get('/get_positions', 'App\Http\Controllers\PositionController@gets');
+
+    Route::post('/create_departement', 'App\Http\Controllers\DepartementController@create');
+    Route::post('/edit_departement', 'App\Http\Controllers\DepartementController@edit');
+    Route::post('/delete_departement', 'App\Http\Controllers\DepartementController@delete');
+    Route::get('/get_departements', 'App\Http\Controllers\DepartementController@gets');
+
+    Route::post('/create_employee', 'App\Http\Controllers\EmployeeController@create');
+    Route::post('/edit_employee', 'App\Http\Controllers\EmployeeController@edit');
+    Route::post('/delete_employee', 'App\Http\Controllers\EmployeeController@delete');
+    Route::get('/get_employees', 'App\Http\Controllers\EmployeeController@gets');
     
 });
 

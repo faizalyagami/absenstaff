@@ -19,10 +19,10 @@
                 <div class="_1side_menu_list">
                     <ul class="_1side_menu_list_ul">
                     <li><router-link to="/"><Icon type="ios-speedometer" /> Dashboard</router-link></li>
-                    <li><router-link to="tags"><Icon type="ios-speedometer" /> tags</router-link></li>
-                    <li><router-link to="categories"><Icon type="ios-speedometer" /> Categories</router-link></li>
-                    <li><router-link to="adminusers"><Icon type="ios-speedometer" /> Admin Users</router-link></li>
-                    <li><router-link to="role"><Icon type="ios-speedometer" /> Role Management</router-link></li>
+                    <li><router-link to="positions"><Icon type="ios-speedometer" /> Position</router-link></li>
+                    <li><router-link to="departements"><Icon type="ios-speedometer" /> Departements</router-link></li>
+                    <li><router-link to="employees"><Icon type="ios-speedometer" /> Emplyees</router-link></li>
+                    <li><router-link to="users"><Icon type="ios-speedometer" /> Admin Users</router-link></li>
                     <li><a href="/logout"><Icon type="ios-speedometer" /> Logout</a></li>
                     </ul>
                 </div>
