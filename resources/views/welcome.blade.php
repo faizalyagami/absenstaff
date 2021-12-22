@@ -18,7 +18,11 @@
     </head>
     <body>
         <div id="app">
-            <mainapp></mainapp>
+            @auth
+                <mainapp :user="{{ Auth::user() }}"></mainapp>
+            @else
+                <mainapp :user="false"></mainapp>
+            @endauth
         </div>
     </body>
 

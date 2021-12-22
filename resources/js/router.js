@@ -9,6 +9,9 @@ import home from './components/pages/home'
 import tags from './admin/pages/tags'
 import categories from './admin/pages/categories'
 import usecom from './vuex/usecom'
+import adminusers from './admin/pages/adminusers'
+import login from './admin/pages/login'
+import role from './admin/pages/role'
 
 Vue.use(Router)
 
@@ -31,6 +34,18 @@ const routes = [
     {
         path: '/categories',
         component: categories
+    }, 
+    {
+        path: '/adminusers',
+        component: adminusers
+    }, 
+    {
+        path: '/login',
+        component: login
+    }, 
+    {
+        path: '/role',
+        component: role
     }, 
 
 

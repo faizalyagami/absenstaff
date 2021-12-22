@@ -40,6 +40,7 @@
                     this.swr();
                     this.$store.commit('setDeleteModal', false)
                 }
+                this.isDeleting = false
             },
             closeModal() {
                 this.$store.commit('setDeleteModal', false)

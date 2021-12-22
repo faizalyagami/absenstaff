@@ -3085,4 +3085,7 @@ p {
   .table_image img {
     width: 70px;
   }
+  .space {
+    margin-top: 10px;
+  }
   
