@@ -1,0 +1,61 @@
+Name Bondan Sindhu Bhirawa
+NIP 2019100303
+Reward 500,000
+
+Term and Conditions Jika terpenuhi minimal 5054 di bulan Juni sudah bisa naik Gaji
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+sos
+
+No Challenge Start Due to Fi Achievedat | Checkist | Values
+“Membuat ERD Inventories, Dellveries dan HR Ostanzo22| —3itan 2022 Oo 5x
+2 membsnanbaraw metan pakean bean samar oa teb2o2z| 28 reb'2022 O 5x
+3 Membuat road map Inventories, Delveries dan HR selama 2022 (diluar feature yang sudah disiapkan go) Oglan 2022| 31 Mar 2022 O 5x
+a |improvement untuk semua feature Inventories, Deliveries dan HR Ostan 2022| 30 Dec 2022 O 153
+lMembuat Ist data plus dan minus team nya, serta treatment apa yang sudah dan akan dilakukan Ontan 2022| 31 tan 2022 O ox
+Mengeluarkan Engine HR dari package MPS menjadi Micro service O1Apr2022| 30 Dec 2022 O 255
+7 provide semua kebutuhan API dari engine HR O1Apr 2022| 2006e 2022 O 00
+| meminimalisir (bahkan kalau bisa zero error) Kesalahan di data inventories 03 Jan 2022 31 May 2022 0 1596
+Na as Ostan 2022| — 30 Dec 2022 O nose
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
